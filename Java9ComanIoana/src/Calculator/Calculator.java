@@ -7,7 +7,7 @@ package Calculator;
 
 /**
  *
- * @author ajcpa
+ * @author AJC
  */
 public class Calculator {
     int result = 0;
