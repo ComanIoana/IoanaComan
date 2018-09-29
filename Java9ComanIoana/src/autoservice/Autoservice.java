@@ -43,7 +43,7 @@ public class Autoservice {
         System.out.println("Car Color: " + x.getColor());
         System.out.println("Car Speed: " + x.getSpeed());
         System.out.println("Car Sale Price: " + x.getSalePrice());
-        System.out.println("Car Renting Price: " + x.getDailyRentPrice());  
+        System.out.println("Car Renting Price: " + x.getRentPrice());  
         System.out.println();
         }
     }

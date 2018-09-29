@@ -18,10 +18,6 @@ public class Car implements Saleable, Rentable {
     private int salePrice;
     private int rentPrice;
     
-    public int getRentPrice() {
-        return rentPrice;
-    }
-
     public static boolean isRENTABLE() {
         return RENTABLE;
     }
@@ -90,7 +86,7 @@ public class Car implements Saleable, Rentable {
         return(salePrice);
     }
     @Override
-    public int getDailyRentPrice() {
+    public int getRentPrice() {
         return(rentPrice);
     }
 }
