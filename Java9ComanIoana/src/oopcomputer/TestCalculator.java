@@ -27,13 +27,13 @@ public class TestCalculator {
         calculator.alu.setOperand(calculator.butonPlus.apasa()); 
         System.out.print(calculator.alu.getOperand());         
         
+        // Apasam butoane pana apare egal  
         calculator.ecran.setAfisaj(Character.toString(calculator.buton3.apasa()));        
         calculator.ecran.setAfisaj(calculator.ecran.getAfisaj() + Character.toString(calculator.buton2.apasa()));        
         calculator.ecran.setAfisaj(calculator.ecran.getAfisaj() + Character.toString(calculator.buton1.apasa()));
         calculator.alu.setOperandDoi(Integer.parseInt(calculator.ecran.getAfisaj()));
         System.out.print(calculator.alu.getOperandDoi());             
-     
-        // Apasam butoane pana apare egal        
+                  
         calculator.alu.calculeaza();
         System.out.print(calculator.butonEgal.apasa()); 
                         
