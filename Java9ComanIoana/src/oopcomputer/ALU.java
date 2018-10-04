@@ -11,15 +11,15 @@ public class ALU {
     
     private Integer operandUnu;
     private Integer operandDoi;
-    private Character operand;
+    private Character operator;
     private Integer rezultat;
-    
-    public Character getOperand() {
-        return operand;
+
+    public Character getOperator() {
+        return operator;
     }
 
-    public void setOperand(Character operand) {
-        this.operand = operand;
+    public void setOperator(Character operator) {
+        this.operator = operator;
     }
             
     public Integer getOperandUnu() {
@@ -46,8 +46,9 @@ public class ALU {
         this.rezultat = rezultat;
     }
     
+    //Aflarea rezulttului in functie de operatorul introdus
     public void calculeaza(){
-        switch (operand){
+        switch (operator){
             case '+':
                 rezultat = operandUnu + operandDoi;
                 break;
@@ -64,5 +65,4 @@ public class ALU {
                 System.out.println("Operatorul este incorect. Folositi +,-,*,/");
         }
     }
-
 }
