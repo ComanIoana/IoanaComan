@@ -1,5 +1,5 @@
 /*
- * Buton din care vom creea butonaele
+ * Buton din care vom creea butoanele
  */
 package oopcomputer;
 
