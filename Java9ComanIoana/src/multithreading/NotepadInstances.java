@@ -30,12 +30,12 @@ public class NotepadInstances {
             pb3 = new ProcessBuilder(
                 "java",
                 "-classpath",
-                "E:IT\\Java\\IoanaComan\\Java9ComanIoana\\build\\classes",
+                "E:\\Chiut\\IT\\Java\\Project\\IoanaComan\\Java9ComanIoana\\build\\classes",
                 "multithreading.NotepadInstance",
                 "3", "Notepad", "User", "Admin");
             Map<String, String> env = pb3.environment();
             env.put("INSTANCE_NO", "3");
-            pb3.directory(new File("E:\\IT\\Java\\IoanaComan\\Java9ComanIoana\\build\\classes\\multithreading"));
+            pb3.directory(new File("E:\\Chiut\\IT\\Java\\Project\\IoanaComan\\Java9ComanIoana\\build\\classes\\multithreading"));
             //Start processes
             pb1.start();
             pb2.start();
