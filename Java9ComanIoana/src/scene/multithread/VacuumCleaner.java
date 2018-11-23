@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Vacuum cleaner thread
  */
 package scene.multithread;
 
@@ -37,7 +35,7 @@ public class VacuumCleaner extends Thread {
          try{
              Thread.sleep(6000);
          } catch (InterruptedException ex) {
-             System.out.println("Vacuum was  interrupted");;
+             System.out.println("Vacuum cleaner was interrupted");
         }
         isOff();
     }

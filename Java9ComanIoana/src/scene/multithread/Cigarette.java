@@ -1,11 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Cigarette thread
  */
 package scene.multithread;
 
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  *
@@ -14,20 +13,26 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class Cigarette extends Thread{
     
     private AtomicBoolean burning = new AtomicBoolean();
+    private AtomicInteger lenght = new AtomicInteger();
     
     public synchronized void burn(){
-        System.out.println("Cigarette is burning");
+        System.out.println("Cigar is burning");
         burning.set(true);
+        lenght.set(5);
     }
     
     @Override
     public void run(){   
         burn();
         try{
-            Thread.sleep(5000);
+            for(int min=0;min<5;min++){
+               lenght.decrementAndGet();
+               Thread.sleep(1000);
+            }       
         } catch (InterruptedException ex) {
             System.out.println("Cigar was put out");
-        }    
-        System.out.println("Cigarette is finished");  
+        }
+        burning.set(false);
+        System.out.println("Cigar is finished");  
     }   
 }
