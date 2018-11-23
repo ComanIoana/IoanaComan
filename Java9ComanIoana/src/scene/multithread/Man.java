@@ -29,7 +29,6 @@ public class Man extends Thread {
     }
     public synchronized void wakeWife(){
         System.out.println("Husband wakes wife");
-        notify();
         wife.interrupt();
     }
     

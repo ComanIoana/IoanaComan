@@ -22,7 +22,6 @@ public class Tv extends Thread{
     public synchronized void favoriteShow(){
         System.out.println("Wife's favorite show is on TV");
         favoriteShow.set(true);
-        notify();
     }
     
     @Override
