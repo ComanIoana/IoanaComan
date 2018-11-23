@@ -12,18 +12,18 @@ import static org.junit.Assert.*;
  *
  * @author AJC
  */
-public class ALUTest {
+public class AluTest {
     
-    public ALUTest() {
+    public AluTest() {
     }
 
     /**
-     * Test of getOperator method, of class ALU.
+     * Test of getOperator method, of class Alu.
      */
     @Test
     public void testGetOperator() {
         System.out.println("getOperator");
-        ALU instance = new ALU();
+        Alu instance = new Alu();
         instance.setOperator('+');
         Character expResult = '+';
         Character result = instance.getOperator();
@@ -33,13 +33,13 @@ public class ALUTest {
     }
 
     /**
-     * Test of setOperator method, of class ALU.
+     * Test of setOperator method, of class Alu.
      */
     @Test
     public void testSetOperator() {
         System.out.println("setOperator");
         Character operator = '-';
-        ALU instance = new ALU();
+        Alu instance = new Alu();
         instance.setOperator(operator);
         Character expResult = '-';
         Character result = instance.getOperator();
@@ -49,12 +49,12 @@ public class ALUTest {
     }
 
     /**
-     * Test of getOperandUnu method, of class ALU.
+     * Test of getOperandUnu method, of class Alu.
      */
     @Test
     public void testGetOperandUnu() {
         System.out.println("getOperandUnu");
-        ALU instance = new ALU();
+        Alu instance = new Alu();
         instance.setOperandUnu(100);
         Integer expResult = 100;
         Integer result = instance.getOperandUnu();
@@ -64,13 +64,13 @@ public class ALUTest {
     }
 
     /**
-     * Test of setOperandUnu method, of class ALU.
+     * Test of setOperandUnu method, of class Alu.
      */
     @Test
     public void testSetOperandUnu() {
         System.out.println("setOperandUnu");
         Integer operandUnu = 120;
-        ALU instance = new ALU();
+        Alu instance = new Alu();
         instance.setOperandUnu(operandUnu);
         Integer expResult = 120;
         Integer result = instance.getOperandUnu();
@@ -80,12 +80,12 @@ public class ALUTest {
     }
 
     /**
-     * Test of getOperandDoi method, of class ALU.
+     * Test of getOperandDoi method, of class Alu.
      */
     @Test
     public void testGetOperandDoi() {
         System.out.println("getOperandDoi");
-        ALU instance = new ALU();
+        Alu instance = new Alu();
         instance.setOperandDoi(213);
         Integer expResult = 213;
         Integer result = instance.getOperandDoi();
@@ -95,13 +95,13 @@ public class ALUTest {
     }
 
     /**
-     * Test of setOperandDoi method, of class ALU.
+     * Test of setOperandDoi method, of class Alu.
      */
     @Test
     public void testSetOperandDoi() {
         System.out.println("setOperandDoi");
         Integer operandDoi = 321;
-        ALU instance = new ALU();
+        Alu instance = new Alu();
         instance.setOperandDoi(operandDoi);
         Integer expResult = 321;
         Integer result = instance.getOperandDoi();
@@ -111,12 +111,12 @@ public class ALUTest {
     }
 
     /**
-     * Test of getRezultat method, of class ALU.
+     * Test of getRezultat method, of class Alu.
      */
     @Test
     public void testGetRezultat() {
         System.out.println("getRezultat");
-        ALU instance = new ALU();
+        Alu instance = new Alu();
         instance.setRezultat(100);
         Integer expResult = 100;
         Integer result = instance.getRezultat();
@@ -126,13 +126,13 @@ public class ALUTest {
     }
 
     /**
-     * Test of setRezultat method, of class ALU.
+     * Test of setRezultat method, of class Alu.
      */
     @Test
     public void testSetRezultat() {
         System.out.println("setRezultat");
         Integer rezultat = 200;
-        ALU instance = new ALU();
+        Alu instance = new Alu();
         instance.setRezultat(rezultat);
         Integer expResult = 200;
         Integer result = instance.getRezultat();
@@ -142,12 +142,12 @@ public class ALUTest {
     }
 
     /**
-     * Test of calculeaza method, of class ALU.
+     * Test of calculeaza method, of class Alu.
      */
     @Test
     public void testCalculeaza() {
         System.out.println("calculeaza");
-        ALU instance = new ALU();
+        Alu instance = new Alu();
         instance.setOperandUnu(120);
         instance.setOperandDoi(100);
         instance.setOperator('+');

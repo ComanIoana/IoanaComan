@@ -7,7 +7,7 @@ package oopcomputer;
  *
  * @author AJC
  */
-public class ALU {
+public class Alu {
     
     private Integer operandUnu;
     private Integer operandDoi;

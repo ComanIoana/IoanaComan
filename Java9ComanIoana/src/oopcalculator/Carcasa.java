@@ -1,7 +1,7 @@
 /*
  * Carcasa calculatorului ce conecteaza toate componentele 
  */
-package oopcomputer;
+package oopcalculator;
 
 /**
  *
@@ -10,13 +10,15 @@ package oopcomputer;
 public class Carcasa {
     
     //Creeare Ecran
-    private Ecran ecran = new Ecran();
+    private Ecran ecran = new Ecran(this);
+    
     public Ecran getEcran() {
         return ecran;
     }
     
     //Creeare Alu
-    private Alu alu = new Alu();   
+    private Alu alu = new Alu();  
+    
     public Alu getAlu() {
         return alu;
     }
