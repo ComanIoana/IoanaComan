@@ -37,6 +37,7 @@ public class Man extends Thread {
         vacuuming();
         try {
             tv.join();
+            Thread.sleep(1000);
         } catch (InterruptedException ex) {
             System.out.println("Man was intertupted");
         }
