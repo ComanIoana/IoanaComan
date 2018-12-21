@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+tableUsers TDD
+-->
+
+<!--
+Users table can store multiple users
+having unique usernames
+and nonull passwords
+-->
+
+<!ELEMENT Users (User)*>
+<!ELEMENT User (Username|Password)*>
+<!--- PRIMARY KEY VARCHAR(25) -->
+<!ELEMENT Username (#PCDATA)>
+<!--- NONULL VARCHAR(25) -->
+<!ELEMENT Password (#PCDATA)>

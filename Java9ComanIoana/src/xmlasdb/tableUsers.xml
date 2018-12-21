@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--
+Users data 
+--><Users>
+    <User>
+        <Username>user</Username>
+        <Password>user</Password>
+    </User>
+    <User>
+        <Username>admin</Username>
+        <Password>admin</Password>
+    </User>
+    <User>
+        <Username>someone</Username>
+        <Password>someone123</Password>
+    </User>
+</Users>
